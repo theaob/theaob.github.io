@@ -1,0 +1,3 @@
+# Authorised sellers of ads in apps by this developer (https://iabtechlab.com/ads-txt/).
+# Google AdMob, publisher account of the developer of Game Dev Studio.
+google.com, pub-3615836489279250, DIRECT, f08c47fec0942fa0
