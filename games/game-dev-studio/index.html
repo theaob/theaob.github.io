@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Dev Studio</title>
+  <meta name="description" content="Make hit games, beat rival studios and grow from a garage to a campus. A management sim for Android and the web." />
+  <link rel="icon" href="img/icon-192.png" />
+  <meta property="og:title" content="Game Dev Studio" />
+  <meta property="og:description" content="Make hit games, beat rival studios and grow from a garage to a campus." />
+  <meta property="og:image" content="https://theaob.github.io/games/game-dev-studio/img/feature.png" />
+  <style>
+    :root {
+      --bg: #efe4cf;
+      --card: #fff8ea;
+      --ink: #2b2622;
+      --muted: #6b5f50;
+      --accent: #dc4b2a;
+      --line: #d6c5a5;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 32px 16px 56px; }
+    header { display: flex; gap: 18px; align-items: center; }
+    header img { width: 88px; height: 88px; border-radius: 22px; }
+    h1 { font-size: 2.2rem; line-height: 1.05; margin: 0 0 6px; letter-spacing: -0.5px; }
+    .lead { margin: 0; color: var(--muted); font-size: 1.1rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 8px; }
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 14px;
+      border: 3px solid var(--ink);
+      box-shadow: 0 4px 0 var(--ink);
+      background: var(--card);
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn.primary { background: var(--accent); color: #fff8ea; }
+    .btn[aria-disabled="true"] { opacity: 0.65; }
+    .feature { width: 100%; height: auto; border-radius: 18px; margin: 24px 0; border: 3px solid var(--ink); display: block; }
+    .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 8px 0 28px; }
+    .shots img { width: 100%; height: auto; border-radius: 14px; border: 3px solid var(--ink); display: block; }
+    @media (max-width: 640px) { .shots { grid-template-columns: repeat(2, 1fr); } h1 { font-size: 1.8rem; } }
+    h2 { font-size: 1.25rem; margin: 28px 0 8px; }
+    ul { padding-left: 1.2em; margin: 0; }
+    li { margin: 4px 0; }
+    .card { background: var(--card); border: 2px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+    footer { margin-top: 40px; color: var(--muted); font-size: 0.95rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="img/icon-192.png" alt="" width="88" height="88" />
+      <div>
+        <h1>Game Dev Studio</h1>
+        <p class="lead">Make hit games, beat rival studios and grow from a garage to a campus.</p>
+      </div>
+    </header>
+
+    <div class="buttons">
+      <a class="btn primary" href="https://play.google.com/store/apps/details?id=io.github.theaob.gamedevstudio">Get it on Google Play</a>
+      <a class="btn" href="https://github.com/theaob/game-dev-studio">Source on GitHub</a>
+    </div>
+
+    <img class="feature" src="img/feature.png" alt="Game Dev Studio: a 3D office full of developers making games" width="1024" height="500" />
+
+    <p>Start in a garage in 1985 with a single computer and a big dream. Forty years later, will your studio be a legend? Pick a topic and a genre, choose a platform, guide your team through development and wait for the reviews to roll in. Great games win fans and money; flops can sink you.</p>
+
+    <div class="shots">
+      <img src="img/1-studio.jpg" alt="The studio office with a game in development" loading="lazy" width="540" height="960" />
+      <img src="img/2-reviews.jpg" alt="Launch-day reviews from four magazines" loading="lazy" width="540" height="960" />
+      <img src="img/3-new-game.jpg" alt="Choosing a topic and genre, with a reception preview" loading="lazy" width="540" height="960" />
+      <img src="img/4-game-report.jpg" alt="A game's report card with money made against cost" loading="lazy" width="540" height="960" />
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+      <li>24 topics, 7 genres and 18 fictional platforms that rise and fall over four decades.</li>
+      <li>Hire and train a team, research better engines and move from a garage to a campus.</li>
+      <li>Build hype, book a booth at the yearly GameExpo and push sales after launch.</li>
+      <li>Yearly trends and rival studios in the industry news.</li>
+      <li>Charts for every game: what it cost, what it earned and when it paid for itself.</li>
+    </ul>
+
+    <h2>Support and privacy</h2>
+    <div class="card">
+      <p style="margin-top:0">Found a bug or have an idea? <a href="https://github.com/theaob/game-dev-studio/issues">Open an issue on GitHub</a>.</p>
+      <p style="margin-bottom:0">The Android app shows ads from Google AdMob (optional reward videos and an occasional full-screen ad) and offers a one-time purchase to remove the full-screen ads. Read the <a href="https://github.com/theaob/game-dev-studio/blob/main/store/privacy-policy.md">privacy policy</a>.</p>
+    </div>
+
+    <footer>© Onur Baykal · <a href="/">theaob.github.io</a></footer>
+  </main>
+</body>
+</html>
