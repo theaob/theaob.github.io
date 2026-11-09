@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theaob.github.io/sitemap.xml
