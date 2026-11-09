@@ -54,7 +54,7 @@
       display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line);
       border-radius: 18px; overflow: hidden; transition: transform .15s ease, border-color .15s ease;
     }
-    .project:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .project:has(a):hover { transform: translateY(-2px); border-color: var(--accent); }
     .project .cover img { width: 100%; height: auto; aspect-ratio: 800 / 391; object-fit: cover; display: block; }
     .project .body { padding: 14px 16px 16px; display: flex; flex-direction: column; flex: 1; }
     .project h3 { margin: 0 0 4px; font-size: 1.15rem; }
@@ -72,7 +72,7 @@
   <main>
     <section class="hero">
       <h1>Hi, I'm Onur Baykal.</h1>
-      <p>I'm a software developer who builds Android apps and games. This is where I put the things I make.</p>
+      <p>I'm a software developer who builds Android apps, games and handy tools. This is where I put the things I make.</p>
       <nav class="links" aria-label="Elsewhere">
         <a href="https://github.com/theaob">GitHub</a>
       </nav>
@@ -86,7 +86,7 @@
           <h3><a href="/games/game-dev-studio/">Game Dev Studio</a></h3>
           <p>A management sim: make hit games, beat rival studios and grow from a garage to a campus.</p>
           <div class="tags"><span>Android</span><span>Web</span><span>Sim</span></div>
-          <p class="more"><a href="https://play.google.com/store/apps/details?id=io.github.theaob.gamedevstudio">Google Play</a> · <a href="https://github.com/theaob/game-dev-studio">Source</a></p>
+          <p class="more"><a href="https://play.google.com/store/apps/details?id=io.github.theaob.gamedevstudio">Google Play</a></p>
         </div>
       </article>
       <article class="project">
@@ -95,7 +95,7 @@
           <h3><a href="/corner-cutters/play/">Corner Cutters</a></h3>
           <p>Short, sharp arcade Grand Prix races on pixel-3D circuits. One thumb steers; cut the corners.</p>
           <div class="tags"><span>Android</span><span>Web</span><span>Racing</span></div>
-          <p class="more"><a href="https://play.google.com/store/apps/details?id=io.github.theaob.cornercutters">Google Play</a> · <a href="/corner-cutters/play/">Play in browser</a> · <a href="https://github.com/theaob/corner-cutters">Source</a></p>
+          <p class="more"><a href="https://play.google.com/store/apps/details?id=io.github.theaob.cornercutters">Google Play</a> · <a href="/corner-cutters/play/">Play in browser</a></p>
         </div>
       </article>
       <article class="project">
@@ -104,7 +104,7 @@
           <h3><a href="/eatin/">Eat In</a></h3>
           <p>Be a hole in the street. Swallow cars, houses and towers until you rule the city.</p>
           <div class="tags"><span>Android</span><span>Web</span><span>Arcade</span></div>
-          <p class="more"><a href="https://play.google.com/store/apps/details?id=com.onurbaykal.eatin">Google Play</a> · <a href="/eatin/play/">Play in browser</a> · <a href="https://github.com/theaob/eatin">Source</a></p>
+          <p class="more"><a href="https://play.google.com/store/apps/details?id=com.onurbaykal.eatin">Google Play</a> · <a href="/eatin/play/">Play in browser</a></p>
         </div>
       </article>
       <article class="project">
@@ -113,7 +113,7 @@
           <h3><a href="https://play.google.com/store/apps/details?id=com.onurbaykal.zipzapzop">ZipZapZop</a></h3>
           <p>A path-drawing puzzle: one line through every cell, numbers in order. Daily puzzles, a ladder of worlds and endless mode.</p>
           <div class="tags"><span>Android</span><span>Puzzle</span></div>
-          <p class="more"><a href="https://play.google.com/store/apps/details?id=com.onurbaykal.zipzapzop">Google Play</a> · <a href="https://github.com/theaob/Zipzapzop">Source</a></p>
+          <p class="more"><a href="https://play.google.com/store/apps/details?id=com.onurbaykal.zipzapzop">Google Play</a></p>
         </div>
       </article>
       <article class="project">
@@ -122,7 +122,28 @@
           <h3><a href="/concrete-empire/">Concrete Empire</a></h3>
           <p>A construction tycoon: haggle with landowners, raise apartment blocks, then sell or rent out the units.</p>
           <div class="tags"><span>Android</span><span>Web</span><span>Tycoon</span></div>
-          <p class="more"><a href="/concrete-empire/">Play in browser</a> · <a href="https://github.com/theaob/concrete-empire">Source</a></p>
+          <p class="more"><a href="/concrete-empire/">Play in browser</a></p>
+        </div>
+      </article>
+    </div>
+
+    <h2>Tools</h2>
+    <div class="grid">
+      <article class="project">
+        <a class="cover" href="/keystore/"><img src="/img/projects/keystore-manager.jpg" alt="" width="800" height="391" loading="lazy" /></a>
+        <div class="body">
+          <h3><a href="/keystore/">Keystore Manager</a></h3>
+          <p>Create, store and back up the keystores that sign your Android apps, right on your phone. No computer or keytool needed.</p>
+          <div class="tags"><span>Android</span><span>Developer tool</span></div>
+          <p class="more"><a href="/keystore/">Website</a></p>
+        </div>
+      </article>
+      <article class="project">
+        <div class="cover"><img src="/img/projects/desktop-buddy.jpg" alt="" width="800" height="391" loading="lazy" /></div>
+        <div class="body">
+          <h3>Desktop Buddy</h3>
+          <p>A small pixel cat that lives on the Windows taskbar: it walks, naps, plays and nudges you to take breaks.</p>
+          <div class="tags"><span>Windows</span><span>.NET</span></div>
         </div>
       </article>
     </div>
