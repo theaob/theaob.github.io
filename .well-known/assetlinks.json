@@ -5,18 +5,6 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "io.github.theaob.gamedevstudio",
-      "sha256_cert_fingerprints": [
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256_FINGERPRINT"
-      ]
-    }
-  },
-  {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
-    "target": {
-      "namespace": "android_app",
       "package_name": "com.onurbaykal.zipzapzop",
       "sha256_cert_fingerprints": [
         "F2:03:7F:DB:B8:72:ED:80:27:4C:A2:81:5A:E0:8D:C9:1E:E5:A0:F9:B9:A3:38:C2:83:9F:9C:D1:13:FF:30:B9"
