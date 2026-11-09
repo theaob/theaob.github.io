@@ -1,7 +1,100 @@
-<html>
-<title>Onur Baykal</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onur Baykal · Developer</title>
+  <meta name="description" content="Onur Baykal: software developer making Android apps and games. Projects, apps and contact." />
+  <link rel="canonical" href="https://theaob.github.io/" />
+  <link rel="icon" href="/games/game-dev-studio/img/icon-192.png" />
+  <meta property="og:title" content="Onur Baykal · Developer" />
+  <meta property="og:description" content="Android apps and games by Onur Baykal." />
+  <meta property="og:url" content="https://theaob.github.io/" />
+  <meta property="og:image" content="https://theaob.github.io/games/game-dev-studio/img/feature.png" />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --ink: #1f1d1a;
+      --muted: #645d54;
+      --accent: #c8431f;
+      --line: #e2dccf;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16151a;
+        --card: #212027;
+        --ink: #eeeae4;
+        --muted: #a39d94;
+        --accent: #ff7a52;
+        --line: #34323b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 880px; margin: 0 auto; padding: 56px 16px 64px; }
+    a { color: var(--accent); }
+    .hero h1 { font-size: 2.6rem; line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.8px; }
+    .hero p { margin: 0; color: var(--muted); font-size: 1.15rem; max-width: 40em; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .links a {
+      padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--card); color: var(--ink); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    }
+    .links a:hover { border-color: var(--accent); }
+    h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin: 56px 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .project {
+      display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line);
+      border-radius: 18px; overflow: hidden; color: inherit; text-decoration: none;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .project:hover { transform: translateY(-2px); border-color: var(--accent); }
+    .project img { width: 100%; height: auto; aspect-ratio: 1024 / 500; object-fit: cover; display: block; }
+    .project .body { padding: 14px 16px 18px; }
+    .project h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .project p { margin: 0 0 10px; color: var(--muted); font-size: 0.97rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tags span { font-size: 0.78rem; padding: 2px 8px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); }
+    .about { max-width: 40em; }
+    footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+    @media (max-width: 560px) { main { padding-top: 36px; } .hero h1 { font-size: 2rem; } }
+  </style>
+</head>
 <body>
-Coming soon...
-<p><a href="/games/game-dev-studio/">Game Dev Studio</a>: make hit games and grow from a garage to a campus.</p>
+  <main>
+    <section class="hero">
+      <h1>Hi, I'm Onur Baykal.</h1>
+      <p>I'm a software developer who builds Android apps and games. This is where I put the things I make.</p>
+      <nav class="links" aria-label="Elsewhere">
+        <a href="https://github.com/theaob">GitHub</a>
+      </nav>
+    </section>
+
+    <h2>Apps and games</h2>
+    <div class="grid">
+      <a class="project" href="/games/game-dev-studio/">
+        <img src="/games/game-dev-studio/img/feature.png" alt="" width="1024" height="500" loading="lazy" />
+        <div class="body">
+          <h3>Game Dev Studio</h3>
+          <p>A management sim: make hit games, beat rival studios and grow from a garage to a campus.</p>
+          <div class="tags"><span>Android</span><span>Web</span><span>Game</span></div>
+        </div>
+      </a>
+    </div>
+
+    <h2>About</h2>
+    <div class="about">
+      <p>I like small, polished projects that ship. Most of my work is on <a href="https://github.com/theaob">GitHub</a>; bug reports and ideas for any of my apps are welcome there as issues.</p>
+    </div>
+
+    <footer>© Onur Baykal · theaob.github.io</footer>
+  </main>
 </body>
 </html>
